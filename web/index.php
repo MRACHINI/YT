@@ -10,7 +10,7 @@ $page = file_get_contents($url);
 //"url": "https:\/\/www.youtube.com\/watch?v=OZFbep8wG7E",
 //"title": "Regenerative Braking - DIY Electric Scooter Part 4 [VESC]","url": "https:\/\/www.youtube.com\/watch?v=OZFbep8wG7E",
 //preg_match_all('/"title": "(.*)",\n\s*"url": "(.*)",\n\s*.*,\n\s*.*,\n\s*.*,\n\s*"source": "(.*)"/',$page,$a);
-preg_match_all('/"title": "(.*)",\n\s*"url": "(.*)",\n\s*.*,\n\s*"date_published": "([0-9]{4}-[0-9]{2}-[0-9]{2}).*",\n\s*.*,\n\s*"source": "(.*)"/',$page,$a);
+preg_match_all('/"title": "(.*)",\n\s*"url": "(.*)",\n\s*.*,\n\s*"date_published": "([0-9]{4}-[0-9]{2}-[0-9]{2}).*",\n\s*.*.*\n\s.*\n\s.*\n\s.*,\n\s*"source": "(.*)"/',$page,$a);
 
 $current="#EXTM3U\r\n";
 $count = count($a[1]);
