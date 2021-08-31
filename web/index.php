@@ -11,9 +11,9 @@ if (isset($_GET['Type'])) {
 //echo $Type."\n\n";
 
 if($Type == strtolower("json")){
-	$url = 'https://www.inoreader.com/stream/user/1005961156/tag/YouTube%20subscriptions/view/json?n=400'; //json
+	$url = 'https://www.inoreader.com/stream/user/1005961156/tag/YouTube%20subscriptions/view/json?n=1000'; //json
 }else{
-	$url = 'https://www.inoreader.com/stream/user/1005961156/tag/YouTube%20subscriptions?n=400'; //xml
+	$url = 'https://www.inoreader.com/stream/user/1005961156/tag/YouTube%20subscriptions?n=1000'; //xml
 }
 //echo "URL=".$url."\n\n";
 
